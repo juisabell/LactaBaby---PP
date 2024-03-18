@@ -1,0 +1,85 @@
+html{
+    font-size: 62.5%;
+    background-color: #f7d5dc; 
+}
+body{
+    margin:0;
+    padding: 0;
+    display:flex;
+    justify-content:center;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    width: 100%; /* Alterado para ser responsivo */
+    max-width: 600px; /* Adicionado para limitar a largura máxima */
+    height: 100vh;
+}
+.msg{
+    color: rgb(189, 98, 154);
+    font-size: 2rem;
+    display: block;
+
+    justify-content: left;
+}
+.msgCtn{
+    margin: 1rem 0;
+    color: white;
+    padding: 1rem 1rem;
+    background-color: rgb(189, 98, 154);
+    border-radius: 6px;
+    font-size: 2rem;
+    word-wrap: break-word; /* Adicionado para que as mensagens longas quebrem linhas */
+}
+.msgForm{
+    display:flex;
+    padding: 10px;
+    flex-direction:row;
+    /* margin-top: -150px; */
+}
+.input{
+
+    flex: 4;
+    margin-right: 2rem;
+    border:none;
+    border-radius: .5rem;
+    padding: 2px 1rem;
+    font-size: 1.5rem;
+    background-color: aliceblue;
+}
+.input:focus{
+    background-color:white;
+}
+.btn{
+    height:5rem;
+    flex: 1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: .5rem;
+    background-color:  rgb(189, 98, 154);
+    color: whitesmoke;
+    border:none;
+    font-size: 1.6rem;
+}
+
+.messages {
+    height: 85vh;
+    margin-top: 60px;
+    overflow: scroll;
+    padding: 10px;
+}
+.contact {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 10px;
+    background-color: #f9c1cc;
+    box-shadow: 0px -3px 15px #9393938c;
+}
+
+.textInput {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
